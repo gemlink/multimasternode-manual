@@ -124,8 +124,10 @@ nano ./alis.json
 }
 ```
 
+
     If You want to run only one masternode You are finished , You can save file with "ctrl-x" and save data. If You want to add next masternode You need to
-  add next part of confifuration. Each masternode need in alis.json this part added after "}"  and before last "]" in alis.json. 
+  add next part of confifuration. Each masternode need in alis.json this part added after "}"  and before last "]" in alis.json. You can always add new part of alis.json file with new masternode after, when You will configure new masternode on gemcore. 
+
   
  ```
     ,{
@@ -138,44 +140,56 @@ nano ./alis.json
           "masternodeprivkey": "Ptv key next masternode"
         }
       }
-    },
+    }
 ```
 
 # It's very important to have configured in network settings all of Your masternode IPs
 
 7.Next you need to download bootstrap to each configured masternode:
 
+first time for all configured masternodes:
+
 ```
  alis-cli all bootstrap
 ```
 
+or if You will and new masternode You can add botstrap only for new one with :
+
+```
+alis-cli [mnalias] bootstrap
+
+
 8.You can start Your masternode: 
 
-
+first time for all configured masternodes:
 ```
   alis-cli all start
 ```
+or if You will add new masternode , You can start only new one with
+```
+  alis-cli [mnalias] start
+```
 
 9.Last command when You can check all mn status: 
-
 ```
 alis-cli all info
 ```
-
 10. after this command You should see info about mn status.
-
 ---------------------------------------------------------------------------------------------------------------------
 
 #Example commands
 
-Setup all apps alis-cli all setup
+Setup all apps:  
+```alis-cli all setup```
 
-Setup app with id node1 alis-cli node1 setup
+Setup app with id node1:
+```alis-cli node1 setup```
 
-Get info of all apps alis-cli all info
+Get info of all apps:
+```alis-cli all info```
 
-For all alis-cli specific options run alis-cli --help
-
+For all alis-cli specific options run:
+```alis-cli --help```
 -----------------------------------------------------------------------------------------------------------------------------
 
 
