@@ -196,5 +196,9 @@ For all alis-cli specific options run:
 thanks guys
 -----------------------------------------------------------------------------------------------------------------------------
 
+If You want to know more look on it:
+
+[alis.is](https://github.com/alis-is)
+
 
 
