@@ -170,16 +170,21 @@ alis-cli all info
 #Example commands
 
 Setup all apps:  
+
 ```alis-cli all setup```
 
 Setup app with id node1:
+
 ```alis-cli node1 setup```
 
 Get info of all apps:
+
 ```alis-cli all info```
 
 For all alis-cli specific options run:
+
 ```alis-cli --help```
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 
