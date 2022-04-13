@@ -43,23 +43,16 @@ You can download it from : https://github.com/gemlink/gemcore/releases/latest </
 
 ```
 cd
-
 sudo su
-
 apt update 
-
 apt upgrade -y
-
 apt install wget zip unzip gpw curl libgomp1 git -y
-
 ```
 
 2.Now create new directory for Your application:
 
 ```
-
 mkdir /mns
-
 ```
 
 3.Download and install necessary files:
@@ -71,7 +64,6 @@ wget -q https://raw.githubusercontent.com/alis-is/ami/master/install.sh -O /tmp/
 and second 
 ```
 wget -q https://raw.githubusercontent.com/alis-is/alis-cli/master/install.sh -O /tmp/install.sh && sh /tmp/install.sh
-
 ```
 
 4.Next You need to create place for config file and config file:
