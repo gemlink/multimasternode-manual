@@ -66,9 +66,10 @@ mkdir /mns
 
 
 ```
-
 wget -q https://raw.githubusercontent.com/alis-is/ami/master/install.sh -O /tmp/install.sh && sh /tmp/install.sh
-
+```
+and second 
+```
 wget -q https://raw.githubusercontent.com/alis-is/alis-cli/master/install.sh -O /tmp/install.sh && sh /tmp/install.sh
 
 ```
@@ -76,25 +77,19 @@ wget -q https://raw.githubusercontent.com/alis-is/alis-cli/master/install.sh -O 
 4.Next You need to create place for config file and config file:
 
 ```
-
 mkdir /etc/alis-cli
-
 touch /etc/alis-cli/alis.json
-
 cd /etc/alis-cli
-
-
 ```
   
 5.Next You need to prepare config file:
 
 ```
-
 nano ./alis.json
-
 ```
 
 6. Copy to alis.json : 
+
 ```
 {
   "global": {
@@ -127,33 +122,35 @@ nano ./alis.json
     }
 ]
 }
-    ```
+```
 
     If You want to run only one masternode You are finished , You can save file with "ctrl-x" and save data. If You want to add next masternode You need to
   add next part of confifuration. Each masternode need in alis.json this part added after "}"  and before last "]" in alis.json. 
   
  ```
     ,{
-      "id": "gemlink2",
+      "id": "[alias next masternode]",
       "type": "glink.node",
       "configuration": {
         "DAEMON_CONFIGURATION": {
-          "bind": "Your MN ip address 2",
+          "bind": "[Ip address next masternode]",
           "rpcbind": "127.0.0.1",
-          "masternodeprivkey": "your_mn_key 2"
+          "masternodeprivkey": "Ptv key next masternode"
         }
       }
     },
-    ...
 ```
 
-7.Next after configure Your masternode write command:
+# It's very important to have configured in network settings all of Your masternode IPs
 
+7.Next you need to download bootstrap to each configured masternode:
+
+```
  alis-cli all bootstrap
-
-this command will download all bc for Your masternode
+```
 
 8.You can start Your masternode: 
+
 
 ```
   alis-cli all start
@@ -162,9 +159,7 @@ this command will download all bc for Your masternode
 9.Last command when You can check all mn status: 
 
 ```
-
 alis-cli all info
-
 ```
 
 10. after this command You should see info about mn status.
