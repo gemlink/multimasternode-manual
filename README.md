@@ -13,6 +13,7 @@ Minimal settings for VPS for each MN on server , when You want to have more mast
 - 2 GB SWAP on each masternode 
 - 15 GB HDD on each masternode 
 - extra 25 GB one time for system 
+- adresses ipv4 or ipv6 one for each masternode 
 
 </h>
 
