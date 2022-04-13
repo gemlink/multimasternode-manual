@@ -160,7 +160,7 @@ or if You will add new masternode , You can start only new one with
   alis-cli [mnalias] start
 ```
 
-9.Last command when You can check all mn status: 
+9.Last command where You can check all mn status: 
 ```
 alis-cli all info
 ```
