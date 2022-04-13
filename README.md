@@ -116,7 +116,7 @@ nano ./alis.json
 }
 ```
 
-If You want to run only one masternode You that all , You can save file with "ctrl-x" ,save data and go to next point. If You want to add next masternode You need to
+If You want to run only one masternode, that all , You can save file with "ctrl-x" ,save data and go to next point. If You want to add next masternode You need to
 add next part of confifuration. Each masternode need in alis.json this part added after "}"  and before last "]" in alis.json. You can always add new part of    alis.json file with new masternode after, when You will configure new masternode on gemcore. 
 
 ```
