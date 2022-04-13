@@ -133,7 +133,7 @@ add next part of configuration. Each masternode need in alis.json this part adde
       }
 ```
 
-# It's very important to have configured in network settings all of Your masternode IPs
+# It's very important to have configured in linux network settings all of Your masternode IPs
 
 7.Next you need to download bootstrap to each configured masternode:
 
