@@ -113,13 +113,15 @@ nano ./alis.json
       }
     }
 ]
-}```
+}
+```
 
 
 	  If You want to run only one masternode You are finished , You can save file with "ctrl-x" and save data. If You want to add next masternode You need to
 add next part of confifuration. Each masternode need in alis.json this part added after "}"  and before last "]" in alis.json. You can always add new part of    alis.json file with new masternode after, when You will configure new masternode on gemcore. 
 
-```,{
+```
+     ,{
       "id": "[alias next masternode]",
       "type": "glink.node",
       "configuration": {
@@ -127,9 +129,9 @@ add next part of confifuration. Each masternode need in alis.json this part adde
           "bind": "[Ip address next masternode]",
           "rpcbind": "127.0.0.1",
           "masternodeprivkey": "Ptv key next masternode"
-        }
+         }
+       }
       }
-    }
 ```
 
 # It's very important to have configured in network settings all of Your masternode IPs
