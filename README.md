@@ -147,7 +147,7 @@ or if You will and new masternode You can add botstrap only for new one with :
 
 ```
 alis-cli [mnalias] bootstrap
-
+```
 
 8.You can start Your masternode: 
 
