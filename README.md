@@ -9,7 +9,7 @@ Manual to setup masternode on Ubuntu 20.04 system VPS
 Minimal settings for VPS for each MN on server , when You want to have more masternodes You need to multiply this value by quantity of planned masternodes:
 
 - 1 core on each 4 masternode minimum on start 4 core because of system
-- 0.7 GB RAM on wach masternode minimum on start 2GB 
+- 0.7 GB RAM on each masternode minimum on start 2GB 
 - 2 GB SWAP on each masternode 
 - 15 GB HDD on each masternode 
 - extra 25 GB one time for system 
@@ -127,7 +127,7 @@ add next part of confifuration. Each masternode need in alis.json this part adde
         "DAEMON_CONFIGURATION": {
           "bind": "[Ip address next masternode]",
           "rpcbind": "127.0.0.1",
-          "masternodeprivkey": "Ptv key next masternode"
+          "masternodeprivkey": "Prv key next masternode"
          }
        }
       }
