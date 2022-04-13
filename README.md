@@ -33,7 +33,7 @@ You can download it from : https://github.com/gemlink/gemcore/releases/latest </
 	- in "Alias name" field write <alias name> - the same as You add for t-address label
 	- in "VPS IP" - ip address Your VPS - where will be mn set 
 
-	## DON'T start the masternode You need to run first script on vps.
+	## DON'T start the masternode You need to configure all on Your vps.
 	
 ---------------------------------------------------------------------------------------------------------------------
 # configure masternode managment system on VPS (AMI-CLI , GLINK.NODE , AMI-ALIS)
