@@ -9,11 +9,10 @@ Manual to setup masternode on Ubuntu 20.04 system VPS
 Minimal settings for VPS for each MN on server , when You want to have more masternodes You need to multiply this value by quantity of planned masternodes:
 
 - 1 core on each 4 masternode minimum on start 4 core because of system
-- 0.7 GB RAM on wach masternode
-- 2 GB SWAP on each masternode
-- 15 GB HDD on each masternode
-
-- 25 GB one time for system 
+- 0.7 GB RAM on wach masternode minimum on start 2GB 
+- 2 GB SWAP on each masternode 
+- 15 GB HDD on each masternode 
+- extra 25 GB one time for system 
 
 </h>
 
