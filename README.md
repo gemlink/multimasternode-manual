@@ -1,5 +1,3 @@
-# multimasternode-setup
-
 # To run this multimasternode setup You need to familiar with network setting on ubuntu 20.04.
 
  - before start this setup You should configure all necessary IP address for masternodes on Your ubuntu server
