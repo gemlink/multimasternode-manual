@@ -164,7 +164,7 @@ or if You will add new masternode , You can start only new one with
 ```
 alis-cli all info
 ```
-10. after this command You should see info about mn status.
+10. After this command You should see info about mn status.
 ---------------------------------------------------------------------------------------------------------------------
 
 #Example commands
