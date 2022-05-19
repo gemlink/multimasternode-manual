@@ -142,7 +142,7 @@ add next part of configuration. Each next masternode need in alis.json this part
 first time for all configured masternodes:
 
 ```
- alis-cli all setup
+ alis-cli all bootstrap
 ```
 
 or if You will and new masternode You can add botstrap only for new one with :
