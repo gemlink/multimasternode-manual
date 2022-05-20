@@ -127,8 +127,7 @@ add next part of configuration. Each next masternode need in alis.json this part
       "type": "glink.node",
       "configuration": {
         "DAEMON_CONFIGURATION": {
-          "bind": "[Ip address next masternode]",
-          "rpcbind": "127.0.0.1",
+          "rpcbind": "[Ip address next masternode]",
           "masternodeprivkey": "Prv key next masternode"
          }
        }
