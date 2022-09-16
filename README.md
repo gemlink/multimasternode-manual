@@ -87,7 +87,7 @@ nano ./alis.json
 {
   "global": {
     "user": "glink",
-    "appDirectory": "/mns",
+    "appDirectory": "/mns/",
     "configuration": {
       "DAEMON_CONFIGURATION": {
         "port": 16113,
