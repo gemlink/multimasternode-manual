@@ -137,9 +137,19 @@ add next part of configuration. Each next masternode need in alis.json this part
 
 # It's very important to have configured in linux network settings all of Your masternode IPs
 
-7.Next you need to download bootstrap to each configured masternode:
+7.Next you need to setup Your masternode:
 
-first time for all configured masternodes:
+```
+alis-cli all setup
+```
+
+ofcourse You can setup only selected masternode with :
+
+```
+alis-cli [alias] setup
+```
+
+After this You can download bootstrap for all configured masternodes:
 
 ```
  alis-cli all bootstrap
