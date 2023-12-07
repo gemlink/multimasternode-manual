@@ -94,6 +94,8 @@ nano ./alis.json
         "txindex": 1,
         "masternode": 1,
         "rpcallowip": "127.0.0.0/8"
+        "addnode": "15.235.142.201"
+        "addnode": "193.25.2.237"
       }
     }
   },
