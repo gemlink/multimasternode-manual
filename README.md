@@ -1,9 +1,9 @@
-# To run this multimasternode setup You need to be familiar with the network settings on ubuntu 20.04.
+# To run this multimasternode setup You need to be familiar with the network settings on ubuntu 20.04+.
 
  - before start this setup You should configure all necessary IP address for masternodes on Your ubuntu server
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Manual to setup masternode on Ubuntu 20.04 system VPS
+---
+Manual to setup masternode on Ubuntu 20.04+ system VPS
 
 
 Minimal settings for VPS for each MN on server , when You want to have more masternodes You need to multiply this value by quantity of planned masternodes:
@@ -13,7 +13,7 @@ Minimal settings for VPS for each MN on server , when You want to have more mast
 - 2 GB SWAP on each masternode 
 - 15 GB HDD on each masternode 
 - extra 25 GB one time for system 
-- adresses ipv4 or ipv6 one for each masternode 
+- addresses ipv4 or ipv6 one for each masternode 
 
 </h>
 
@@ -22,24 +22,23 @@ Creating masternode on main wallet
 If You use MiracleBox Wallet:
 
 You can download it from : https://gemlink.org/miraclebox </br>
-
-1. Create new t-address or use empty t-address - give him label the same as planed masternode alias - it will be easier to find mn rewards.
-2. Transfer to this t-address in one part 20000 coin.
-3. After this You need wait about 2 confirmations.
+1. Create new t-address or use empty t-address - give it label the same as planed masternode alias - it will be easier to find mn rewards.
+2. Transfer to this t-address in one transaction 20000 coin.
+3. After this you need wait about 2 confirmations.
 4. Next go to masternode setup on GemCore:
-	- press button Get Private Key"
+	- press button `Get Private Key`
 	- pres button "Generate Masternode Data"
-	- You will see below mndata - check the box on the left , data will be automaticaly move to free fields
-	- copy to clipboard mn prv key generated with transacrion ID and index, it will be necessary to vps script
-	- in "Alias name" field write <alias name> - the same as You add for t-address label
-	- in "VPS IP" - ip address Your VPS - where will be mn set 
+	- you will see below `mndata` - check the box on the left , data will be automatically move to free fields
+	- copy to clipboard mn prv key generated with transaction ID and index, it will be necessary to vps script
+	- in `Alias name` field write the name you want to give to your masternode - the same as you add for t-address label
+	- in `VPS IP` - ip address of Your VPS - where will be mn set 
 
-	## DON'T start the masternode You need to configure first all on Your vps.
+### DON'T start the masternode You need to configure first all on your vps.
 	
----------------------------------------------------------------------------------------------------------------------
-# configure masternode managment system on VPS (AMI-CLI , GLINK.NODE , AMI-ALIS)
+---
+## configure masternode management system on VPS (AMI-CLI , GLINK.NODE , ALIS-CLI)
 
-1. Update Your ubuntu and install necessary package.
+1. Update Your ubuntu and install necessary packages.
 
 
 ```
@@ -50,7 +49,7 @@ apt upgrade -y
 apt install wget zip unzip gpw curl libgomp1 git -y
 ```
 
-2.Now create new directory for Your application:
+2.Now create new directory for your application:
 
 ```
 mkdir /mns
@@ -58,11 +57,6 @@ mkdir /mns
 
 3.Download and install necessary files:
 
-
-```
-wget -q https://raw.githubusercontent.com/alis-is/ami/master/install.sh -O /tmp/install.sh && sh /tmp/install.sh
-```
-and second 
 ```
 wget -q https://raw.githubusercontent.com/alis-is/alis-cli/master/install.sh -O /tmp/install.sh && sh /tmp/install.sh
 ```
@@ -78,10 +72,10 @@ cd /etc/alis-cli
 5.Next You need to prepare config file:
 
 ```
-nano ./alis.json
+nano ./alis.hjson
 ```
 
-6. Copy to alis.json : 
+6. Copy to alis.hjson : 
 
 ```
 {
@@ -145,10 +139,10 @@ add next part of configuration. Each next masternode need in alis.json this part
 alis-cli all setup
 ```
 
-ofcourse You can setup only selected masternode with :
+of course you can setup only selected masternode with :
 
 ```
-alis-cli [alias] setup
+alis-cli [mnalias] setup
 ```
 
 After this You can download bootstrap for all configured masternodes:
@@ -157,7 +151,7 @@ After this You can download bootstrap for all configured masternodes:
  alis-cli all bootstrap
 ```
 
-or if You will and new masternode You can add botstrap only for new one with :
+or if you will and new masternode You can add bootstrap only for new one with :
 
 ```
 alis-cli [mnalias] bootstrap
@@ -179,36 +173,34 @@ or if You will add new masternode , You can start only new one with
 alis-cli all info
 ```
 10. After this command You should see info about mn status.
----------------------------------------------------------------------------------------------------------------------
+---
 
-#Example commands
+### Example commands
 
-Setup all apps:  
-
+Setup all apps: </br>
 ```alis-cli all setup```
 
-Setup app with id node1:
-
+Setup app with id node1: </br>
 ```alis-cli node1 setup```
 
-Get info of all apps:
-
+Get info of all apps: </br>
 ```alis-cli all info```
 
-For all alis-cli specific options run:
-
+For all alis-cli specific options run: </br>
 ```alis-cli --help```
 
------------------------------------------------------------------------------------------------------------------------------
+Clear ami cache: </br>
+```ami --erase-cache```
 
-
-# Special thanks for help: 
+---
+### Special thanks for help: 
 
 - [cryi] (https://github.com/cryi)
 - [ciripel] (https://github.com/ciripel)
 
 thanks guys
------------------------------------------------------------------------------------------------------------------------------
+
+---
 
 If You want to know more look here:
 
