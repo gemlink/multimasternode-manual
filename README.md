@@ -72,7 +72,7 @@ cd /etc/alis-cli
 5.Next You need to prepare config file:
 
 ```
-nano ./alis.hjson
+nano ./alis.json
 ```
 
 6. Copy to alis.hjson : 
